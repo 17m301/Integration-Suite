@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EmpData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Person">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" maxOccurs="1" minOccurs="1"/>
+              <xs:element name="EmpAge" type="xs:unsignedByte" maxOccurs="1" minOccurs="1"/>
+              <xs:element name="Income" type="xs:decimal" maxOccurs="1" minOccurs="0"/>
+              <xs:element name="Contact" type="xs:unsignedInt" maxOccurs="1" minOccurs="0"/>
+              <xs:element name="JoiningDate" type="xs:string" maxOccurs="1" minOccurs="1"/>
+              <xs:element name="Gender" type="xs:string" maxOccurs="1" minOccurs="1"/>
+              <xs:element name="Nation" type="xs:string" maxOccurs="1" minOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
