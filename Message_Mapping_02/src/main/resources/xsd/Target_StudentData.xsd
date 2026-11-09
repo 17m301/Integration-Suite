@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="StudentTransmission">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="StudentRecord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StudentKey" type="xs:string" />
+              <xs:element name="FullName" type="xs:string" />
+              <xs:element name="GenderCode" type="xs:string" />
+              <xs:element name="BirthDate" type="xs:unsignedInt" />
+              <xs:element name="Nationality" type="xs:string" />
+              <xs:element name="ContactInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="EmailAddress" type="xs:string" minOccurs="0"/>
+                    <xs:element name="PhoneNumber" type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AcademicDetails">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Major" type="xs:string" />
+                    <xs:element name="AdmissionDt" type="xs:string" />
+                    <xs:element name="GradeCategory" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
